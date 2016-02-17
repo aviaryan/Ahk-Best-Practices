@@ -5,7 +5,7 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 ## Table of Contents
 
 1. [Indentation](#indentation)
-1. Comments
+1. [Comments](#comments)
 1. Hotkeys and Hotstrings
 1. Variables
 1. Objects and Arrays
@@ -29,10 +29,10 @@ Single-line comments start with semi-colon `;`
 ; Right
 ```
 
-Multi-line comments are wrapped around `/*` and `*/`
+Multi-line comments are enclosed inside `/*` and `*/`
 ```autohotkey
 /* comment
-more wrong comment
+wrong way to comment
 */
 /*
 comment
