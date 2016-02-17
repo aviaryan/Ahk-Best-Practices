@@ -79,12 +79,12 @@ s := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!`n
     . "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eaque.`n"
     . "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam."
 ; good
-s = 
+s := "
 (
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eaque.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam.
-)
+)"
 ```
 
 
