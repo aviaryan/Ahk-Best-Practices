@@ -1,5 +1,5 @@
 # Ahk-Style-Guide
-AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
+AutoHotkey style guide, maintained by the community. This is currently a work in progress. Additions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
 
 
 ## Table of Contents
@@ -29,8 +29,8 @@ The recommended way to indent is using TABS.
 
 Single-line comments start with a semi-colon (`;`). You should precede the comment text with a space.
 ```autohotkey
-;bad
-; good
+;Bad
+; Good
 ```
 
 Multi-line comments are enclosed inside `/*` and `*/`
