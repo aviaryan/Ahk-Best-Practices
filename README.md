@@ -8,7 +8,7 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 1. [Comments](#comments)
 1. Hotkeys and Hotstrings
 1. [Variables](#variables)
-1. Objects and Arrays
+1. Arrays and Objects
 1. Flow of Control (If/Else/Loops)
 1. Commands
 1. Functions
@@ -48,11 +48,6 @@ Prefer using `:=` syntax wherever possible
 ```autohotkey
 var = some string ; Wrong
 var := "some string" ; Right
-```
-
-Similarly
-
-```autohotkey
 var = %onevar%%anothervar% ; Wrong
 var := onevar . anothervar ; Right
 ```
