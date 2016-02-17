@@ -1,5 +1,6 @@
 # Ahk-Style-Guide
-AutoHotkey style guide, maintained by the community
+AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
+
 
 ## Table of Contents
 
