@@ -58,8 +58,7 @@ Return
 
 ### Variables
 
-Prefer using `:=` syntax wherever possible. It avoids confusion.
-
+* Prefer using `:=` syntax wherever possible. It avoids confusion.
 ```autohotkey
 var = some string ; bad
 var := "some string" ; good
@@ -68,6 +67,8 @@ var := onevar . anothervar ; good
 var = 2 ; bad
 var := 2 ; good
 ```
+
+* Try to use the variable in same case at different places.
 
 
 ### Strings
