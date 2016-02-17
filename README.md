@@ -14,7 +14,7 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
     1. [If/Else](#ifelse)
     1. Loops
     1. More
-1. Commands
+1. [Commands](#commands)
 1. Functions
 1. Classes
 1. Directives
@@ -29,18 +29,18 @@ The recommended way to indent is using TABS.
 
 Single-line comments start with a semi-colon (`;`). You should precede the comment text with a space.
 ```autohotkey
-;Wrong
-; Right
+;bad
+; good
 ```
 
 Multi-line comments are enclosed inside `/*` and `*/`
 ```autohotkey
 /* comment
-wrong way to comment
+bad way to comment
 */
 /*
 comment
-right way to comment
+good way to comment
 */
 ```
 
@@ -50,12 +50,12 @@ right way to comment
 Prefer using `:=` syntax wherever possible. It avoids confusion.
 
 ```autohotkey
-var = some string ; Wrong
-var := "some string" ; Right
-var = %onevar%%anothervar% ; Wrong
-var := onevar . anothervar ; Right
-var = 2 ; Wrong
-var := 2 ; Right
+var = some string ; bad
+var := "some string" ; good
+var = %onevar%%anothervar% ; bad
+var := onevar . anothervar ; good
+var = 2 ; bad
+var := 2 ; good
 ```
 
 
@@ -64,9 +64,9 @@ var := 2 ; Right
 Use concatenate (`.`) operator to break a long string into several lines rather than writing it in one line.
 
 ```autohotkey
-; wrong
+; bad
 var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos quas, sapiente sed voluptate repellendus asperiores modi excepturi ea ullam."
-; right
+; good
 var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam inventore"
     . "laudantium voluptas voluptate quasi, quae dolor unde repellendus quo."
 ```
@@ -74,11 +74,11 @@ var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia labori
 For multi-line strings, prefer `(...)` syntax over manually adding \`n at the end of every line.
 
 ```autohotkey
-; wrong
+; bad
 s := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!`n"
     . "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eaque.`n"
     . "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam."
-; right
+; good
 s = 
 (
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!
@@ -92,10 +92,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam.
 
 Use one space between values or key-value pairs in an Array declaration.
 ```autohotkey
-Array := [2,4,6,8] ;wrong
-Array := [2, 4, 6, 8] ;right
-AssociativeArray := {key1: Value1,key2:Value2, key3:Value3} ; wrong
-AssociativeArray := {key1: Value1, key2: Value2, key3: Value3} ; right
+Array := [2,4,6,8] ;bad
+Array := [2, 4, 6, 8] ;good
+AssociativeArray := {key1: Value1,key2:Value2, key3:Value3} ; bad
+AssociativeArray := {key1: Value1, key2: Value2, key3: Value3} ; good
 ```
 
 
@@ -108,11 +108,23 @@ In IF statements, use `==` instead of `=` for comparing. Again this avoids confu
 ```autohotkey
 var := "AHK"
 
-; wrong
+; bad
 if var = AHK
     msgbox match
 
-; right
+; good
 if (var == "AHK")
     msgbox match
+```
+
+
+### Commands
+
+Write commands in proper case.
+```autohotkey
+; bad
+winclose, Notepad
+winClose, Notepad
+; good
+WinClose, Notepad
 ```
