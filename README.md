@@ -7,7 +7,6 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 1. [Indentation](#indentation)
 1. [Comments](#comments)
 1. Hotkeys and Hotstrings
-1. Types
 1. [Variables](#variables)
 1. [Arrays and Objects](#arrays-and-objects)
 1. Flow of Control (If/Else/Loops)
@@ -51,6 +50,16 @@ var = some string ; Wrong
 var := "some string" ; Right
 var = %onevar%%anothervar% ; Wrong
 var := onevar . anothervar ; Right
+```
+
+Use concatenate (`.`) operator to break a long string into several lines rather than writing it in one line.
+
+```autohotkey
+; wrong
+var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos quas, sapiente sed voluptate repellendus asperiores modi excepturi ea ullam."
+; right
+var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam inventore"
+    . "laudantium voluptas voluptate quasi, quae dolor unde repellendus quo."
 ```
 
 
