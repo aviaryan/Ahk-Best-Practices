@@ -23,18 +23,18 @@ AutoHotkey style guide, maintained by the community. This is currently a work in
 
 ### Indentation
 
-The recommended way to indent is using TABS.
+* The recommended way to indent is using TABS.
 
 
 ### Comments
 
-Single-line comments start with a semi-colon (`;`). You should precede the comment text with a space.
+* Single-line comments start with a semi-colon (`;`). You should precede the comment text with a space.
 ```autohotkey
 ;Bad
 ; Good
 ```
 
-Multi-line comments are enclosed inside `/*` and `*/`
+* Multi-line comments are enclosed inside `/*` and `*/`
 ```autohotkey
 /* comment
 bad way to comment
@@ -48,7 +48,7 @@ good way to comment
 
 ### Hotkeys and Hotstrings
 
-For hotkeys, it is recommended to use multi-line syntax with `return`. ([Source](https://autohotkey.com/docs/Tutorial.htm#Text_instructions_6))
+* For hotkeys, it is recommended to use multi-line syntax with `return`. ([Source](https://autohotkey.com/docs/Tutorial.htm#Text_instructions_6))
 ```autohotkey
 ^j::
     Send, My First Script
@@ -73,8 +73,7 @@ var := 2 ; good
 
 ### Strings
 
-Use concatenate (`.`) operator to break a long string into several lines rather than writing it in one line.
-
+* Use concatenate (`.`) operator to break a long string into several lines rather than writing it in one line.
 ```autohotkey
 ; bad
 var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos quas, sapiente sed voluptate repellendus asperiores modi excepturi ea ullam."
@@ -83,8 +82,7 @@ var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia labori
     . "laudantium voluptas voluptate quasi, quae dolor unde repellendus quo."
 ```
 
-For multi-line strings, prefer `(...)` syntax over manually adding \`n at the end of every line.
-
+* For multi-line strings, prefer `(...)` syntax over manually adding \`n at the end of every line.
 ```autohotkey
 ; bad
 s := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!`n"
@@ -102,7 +100,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam.
 
 ### Arrays and Objects
 
-Use one space between values or key-value pairs in an Array declaration.
+* Use one space between values or key-value pairs in an Array declaration.
 ```autohotkey
 Array := [2,4,6,8] ;bad
 Array := [2, 4, 6, 8] ;good
@@ -115,8 +113,7 @@ AssociativeArray := {key1: Value1, key2: Value2, key3: Value3} ; good
 
 #### If/Else
 
-In IF statements, use `==` instead of `=` for comparing. Again this avoids confusion and lots of bugs.
-
+* In IF statements, use `==` instead of `=` for comparing. Again this avoids confusion and lots of bugs.
 ```autohotkey
 var := "AHK"
 
@@ -132,7 +129,7 @@ if (var == "AHK")
 
 ### Commands
 
-Write commands in PascalCase.
+* Write commands in PascalCase.
 ```autohotkey
 ; bad
 winclose, Notepad
@@ -141,7 +138,7 @@ winClose, Notepad
 WinClose, Notepad
 ```
 
-It is OK to omit the comma (,) if only one argument of a command is specified.
+* It is OK to omit the comma (,) if only one argument of a command is specified.
 ```autohotkey
 WinClose Notepad
 ```
@@ -149,14 +146,14 @@ WinClose Notepad
 
 ### Naming Convention
 
-Variable names should use camelCase. (first word - lower, second word - upper, third word - upper, and so on)
+* Variable names should use camelCase. (first word - lower, second word - upper, third word - upper, and so on)
 ```autohotkey
 farthestplanet := "Pluto" ; bad
 farthest_planet := "Pluto" ; ok
 farthestPlanet := "Pluto" ; good
 ```
 
-Class names should use PascalCase
+* Class names should use PascalCase.
 ```autohotkey
 ; bad
 class myclass {
