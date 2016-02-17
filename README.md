@@ -6,7 +6,7 @@ AutoHotkey style guide, maintained by the community. This is currently a work in
 
 1. [Indentation](#indentation)
 1. [Comments](#comments)
-1. Hotkeys and Hotstrings
+1. [Hotkeys and Hotstrings](#hotkeys-and-hotstrings)
 1. [Variables](#variables)
 1. [Strings](#strings)
 1. [Arrays and Objects](#arrays-and-objects)
@@ -18,6 +18,7 @@ AutoHotkey style guide, maintained by the community. This is currently a work in
 1. Functions
 1. Classes
 1. Directives
+1. [Naming Convention](#naming-convention)
 
 
 ### Indentation
@@ -130,11 +131,38 @@ if (var == "AHK")
 
 ### Commands
 
-Write commands in proper case.
+Write commands in PascalCase.
 ```autohotkey
 ; bad
 winclose, Notepad
 winClose, Notepad
 ; good
 WinClose, Notepad
+```
+
+It is OK to omit the comma (,) if only one argument of a command is specified.
+```autohotkey
+WinClose Notepad
+```
+
+
+### Naming Convention
+
+Variable names should use camelCase. (first word - lower, second word - upper, third word - upper, and so on)
+```autohotkey
+farthestplanet := "Pluto" ; bad
+farthest_planet := "Pluto" ; ok
+farthestPlanet := "Pluto" ; good
+```
+
+Class names should use PascalCase
+```autohotkey
+; bad
+class myclass {
+    
+}
+; good
+class MyClass {
+    
+}
 ```
