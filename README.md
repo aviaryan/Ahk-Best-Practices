@@ -11,6 +11,8 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 1. [Strings](#strings)
 1. [Arrays and Objects](#arrays-and-objects)
 1. Flow of Control (If/Else/Loops)
+    1. If/Else
+    1. Loops
 1. Commands
 1. Functions
 1. Classes
@@ -93,4 +95,21 @@ Array := [2,4,6,8] ;wrong
 Array := [2, 4, 6, 8] ;right
 AssociativeArray := {key1: Value1,key2:Value2, key3:Value3} ; wrong
 AssociativeArray := {key1: Value1, key2: Value2, key3: Value3} ; right
+```
+
+
+### Flow of Control
+
+In IF statements, use `==` instead of `=` for comparing. Again this avoids confusion and lots of bugs.
+
+```autohotkey
+var := "AHK"
+
+; wrong
+if var = AHK
+    msgbox match
+
+; right
+if (var == "AHK")
+    msgbox match
 ```
