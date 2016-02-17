@@ -100,6 +100,8 @@ AssociativeArray := {key1: Value1, key2: Value2, key3: Value3} ; right
 
 ### Flow of Control
 
+#### If/Else
+
 In IF statements, use `==` instead of `=` for comparing. Again this avoids confusion and lots of bugs.
 
 ```autohotkey
