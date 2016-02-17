@@ -6,10 +6,10 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 
 1. Indentation
 1. Comments
-1. Hotkeys and Hotstring
+1. Hotkeys and Hotstrings
 1. Variables
-1. Objects
-1. Flow of Control
+1. Objects and Arrays
+1. Flow of Control (If/Else/Loops)
 1. Commands
 1. Functions
 1. Classes
