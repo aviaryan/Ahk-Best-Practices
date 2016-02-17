@@ -10,9 +10,10 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 1. [Variables](#variables)
 1. [Strings](#strings)
 1. [Arrays and Objects](#arrays-and-objects)
-1. Flow of Control (If/Else/Loops)
-    1. If/Else
+1. [Flow of Control](#flow-of-control)
+    1. [If/Else](#ifelse)
     1. Loops
+    1. More
 1. Commands
 1. Functions
 1. Classes
