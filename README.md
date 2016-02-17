@@ -41,7 +41,7 @@ right way to comment
 ```
 
 
-#### Variables
+### Variables
 
 Prefer using `:=` syntax wherever possible
 
@@ -50,4 +50,15 @@ var = some string ; Wrong
 var := "some string" ; Right
 var = %onevar%%anothervar% ; Wrong
 var := onevar . anothervar ; Right
+```
+
+
+### Arrays and Objects
+
+Use one space between values or key-value pairs in an Array declaration.
+```autohotkey
+Array := [2,4,6,8] ;wrong
+Array := [2, 4, 6, 8] ;right
+AssociativeArray := {key1: Value1,key2:Value2, key3:Value3} ; wrong
+AssociativeArray := {key1: Value1, key2: Value2, key3: Value3} ; right
 ```
