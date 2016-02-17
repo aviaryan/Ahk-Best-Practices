@@ -44,13 +44,15 @@ right way to comment
 
 ### Variables
 
-Prefer using `:=` syntax wherever possible
+Prefer using `:=` syntax wherever possible. It avoids confusion.
 
 ```autohotkey
 var = some string ; Wrong
 var := "some string" ; Right
 var = %onevar%%anothervar% ; Wrong
 var := onevar . anothervar ; Right
+var = 2 ; Wrong
+var := 2 ; Right
 ```
 
 
@@ -64,6 +66,22 @@ var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos qua
 ; right
 var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam inventore"
     . "laudantium voluptas voluptate quasi, quae dolor unde repellendus quo."
+```
+
+For multi-line strings, prefer `(...)` syntax over manually adding \`n at the end of every line.
+
+```autohotkey
+; wrong
+s := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!`n"
+    . "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eaque.`n"
+    . "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam."
+; right
+s = 
+(
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eaque.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam.
+)
 ```
 
 
