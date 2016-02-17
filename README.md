@@ -4,11 +4,13 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 
 ## Table of Contents
 
+1. Indentation
+1. Comments
 1. Hotkeys and Hotstring
-2. Variables
-3. Objects
-4. Flow of Control
-5. Commands
-6. Functions
-7. Classes
-8. Directives
+1. Variables
+1. Objects
+1. Flow of Control
+1. Commands
+1. Functions
+1. Classes
+1. Directives
