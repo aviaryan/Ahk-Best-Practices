@@ -23,7 +23,7 @@ The recommended way to indent is using TABS.
 
 ### Comments
 
-Single-line comments start with semi-colon `;`
+Single-line comments start with a semi-colon (`;`). You should precede the comment text with a space.
 ```autohotkey
 ;Wrong
 ; Right
