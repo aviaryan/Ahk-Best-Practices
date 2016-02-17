@@ -7,8 +7,9 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 1. [Indentation](#indentation)
 1. [Comments](#comments)
 1. Hotkeys and Hotstrings
+1. Types
 1. [Variables](#variables)
-1. Arrays and Objects
+1. [Arrays and Objects](#arrays-and-objects)
 1. Flow of Control (If/Else/Loops)
 1. Commands
 1. Functions
