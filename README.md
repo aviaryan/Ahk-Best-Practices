@@ -22,7 +22,7 @@ AutoHotkey style guide, maintained by the community. This is currently a work in
 
 ### Indentation
 
-The recommended way to indent is using TABS. 
+The recommended way to indent is using TABS.
 
 
 ### Comments
@@ -42,6 +42,16 @@ bad way to comment
 comment
 good way to comment
 */
+```
+
+
+### Hotkeys and Hotstrings
+
+For hotkeys, it is recommended to use multi-line syntax with `return`. ([Source](https://autohotkey.com/docs/Tutorial.htm#Text_instructions_6))
+```autohotkey
+^j::
+    Send, My First Script
+Return
 ```
 
 
