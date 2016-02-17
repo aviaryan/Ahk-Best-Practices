@@ -4,7 +4,7 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 
 ## Table of Contents
 
-1. Indentation
+1. [Indentation](#indentation)
 1. Comments
 1. Hotkeys and Hotstrings
 1. Variables
@@ -14,3 +14,28 @@ AutoHotkey style guide, maintained by the community. See [CONTRIBUTING.md](CONTR
 1. Functions
 1. Classes
 1. Directives
+
+
+### Indentation
+
+The recommended way to indent is using TABS. 
+
+
+### Comments
+
+Single-line comments start with semi-colon `;`
+```autohotkey
+;Wrong
+; Right
+```
+
+Multi-line comments are wrapped around `/*` and `*/`
+```autohotkey
+/* comment
+more wrong comment
+*/
+/*
+comment
+right way to comment
+*/
+```
