@@ -1,5 +1,5 @@
-# Ahk-Style-Guide
-AutoHotkey style guide, maintained by the community. This is currently a work in progress. Additions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
+# AutoHotkey Best Practices
+Good practices in AutoHotkey coding that will help avoid bugs and make your code more readable. This is currently a work in progress. Additions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
 
 
 ## Table of Contents
@@ -23,7 +23,26 @@ AutoHotkey style guide, maintained by the community. This is currently a work in
 
 ### Indentation
 
-* The recommended way to indent is using TABS.
+* Indentation makes your code more readable and easy to debug and understand. You may use TABS or a consistent amount of spaces for indentation. ([Source](https://autohotkey.com/docs/Tutorial.htm#s84))
+```autohotkey
+if (car="old")
+{
+   msgbox, the car is really old
+   if (wheels="flat")
+   {
+      msgbox, this car is not safe to drive.
+      Return
+   }
+   else
+   {
+      msgbox, Be careful! This old car will be dangerous to drive.
+   }
+}
+else
+{
+   msgbox, My`, what a shiny new vehicle you have there.
+}
+```
 
 
 ### Comments
@@ -129,7 +148,7 @@ if (var == "AHK")
 
 ### Commands
 
-* Write commands in PascalCase.
+* Try to write commands in PascalCase.
 ```autohotkey
 ; bad
 winclose, Notepad
