@@ -67,7 +67,8 @@ good way to comment
 
 ### Hotkeys and Hotstrings
 
-* For hotkeys, it is recommended to use multi-line syntax with `return`. ([Source](https://autohotkey.com/docs/Tutorial.htm#Text_instructions_6))
+* For hotkeys, it is recommended to use multi-line syntax with `return`. `Return` will end the execution of the current executing subroutine. So in the following example, the 
+execution after pressing Ctrl+J ends when `Return` is encountered. ([Source](https://autohotkey.com/docs/Tutorial.htm#Text_instructions_6))
 ```autohotkey
 ^j::
     Send, My First Script
@@ -77,7 +78,7 @@ Return
 
 ### Variables
 
-* Prefer using `:=` syntax wherever possible. It avoids confusion.
+* Prefer using `:=` syntax wherever possible. It avoids confusion between variable names and literal strings.
 ```autohotkey
 var = some string ; bad
 var := "some string" ; good
@@ -119,7 +120,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam.
 
 ### Arrays and Objects
 
-* Use one space between values or key-value pairs in an Array declaration.
+* Use one space between values or key-value pairs in an Array declaration. It looks nicer.
 ```autohotkey
 Array := [2,4,6,8] ;bad
 Array := [2, 4, 6, 8] ;good
@@ -147,15 +148,6 @@ if (var == "AHK")
 
 
 ### Commands
-
-* Try to write commands in PascalCase.
-```autohotkey
-; bad
-winclose, Notepad
-winClose, Notepad
-; good
-WinClose, Notepad
-```
 
 * It is OK to omit the comma (,) if only one argument of a command is specified.
 ```autohotkey
