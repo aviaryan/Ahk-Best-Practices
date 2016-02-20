@@ -199,4 +199,4 @@ class MyClass {
 
 ## Thanks
 
-* @jNizM, @acorns (tidbit), @cocobelgica, @JSZAdmin (Blackholyman) for their suggestions at the [AHK topic](https://autohotkey.com/boards/viewtopic.php?f=17&t=14089)
+* Awesome people for their suggestions in the [AutoHotkey forum topic](https://autohotkey.com/boards/viewtopic.php?f=17&t=14089)
