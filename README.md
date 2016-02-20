@@ -88,7 +88,7 @@ var = 2 ; bad
 var := 2 ; good
 ```
 
-* Try to use the variable in same case at different places.
+* Try to use the variable in the same case at different places.
 
 
 ### Strings
@@ -114,6 +114,18 @@ s := "
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima!
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eaque.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, veniam.
+)"
+```
+You can even use variables in between. 
+```autohotkey
+s := "
+(
+Line number 1
+Line number 2
+)" . myVar . "
+(
+Line number 5
+Line number 6
 )"
 ```
 
@@ -165,7 +177,7 @@ Run % "Notepad.exe " myFile
 
 ### Naming Convention
 
-* Variable names should consisting of many words should use camelCase or underscores for distinction. 
+* Variable names consisting of many words should use camelCase or underscores for distinction. 
 ```autohotkey
 farthestplanet := "Pluto" ; bad
 farthest_planet := "Pluto" ; good
