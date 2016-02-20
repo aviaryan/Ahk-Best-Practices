@@ -93,7 +93,7 @@ var := 2 ; good
 
 ### Strings
 
-* Use concatenate (`.`) operator to break a long string into several lines rather than writing it in one line.
+* Use concatenate (`.`) operator to break a long string into several lines rather than writing it in one long line.
 ```autohotkey
 ; bad
 var := "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos quas, sapiente sed voluptate repellendus asperiores modi excepturi ea ullam."
@@ -152,6 +152,14 @@ if (var == "AHK")
 * It is OK to omit the comma (,) if only one argument of a command is specified.
 ```autohotkey
 WinClose Notepad
+```
+
+* Try to not use `%var%` variable syntax. It will be deprecated in AHK v2 and also is not consistent with many other programming languages around.
+```autohotkey
+; bad
+Run Notepad.exe %myFile%
+; good
+Run % "Notepad.exe " myFile
 ```
 
 
