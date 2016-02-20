@@ -184,6 +184,14 @@ farthest_planet := "Pluto" ; good
 farthestPlanet := "Pluto" ; good
 ```
 
+* Variable names should be logical and should convey meaning about their purpose.  
+```autohotkey
+i := 40 ;bad
+x_margin := 40 ;good
+ff := "test.pdf" ;bad
+fileName := "test.pdf" ;good
+```
+
 * Class names should use PascalCase. This is consistent with many programming languages like C++, Python and Java.
 ```autohotkey
 ; bad
