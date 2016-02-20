@@ -25,10 +25,10 @@ Good practices in AutoHotkey coding that will help avoid bugs and make your code
 
 * Indentation makes your code more readable and easy to debug and understand. You may use TABS or a consistent amount of spaces for indentation. ([Source](https://autohotkey.com/docs/Tutorial.htm#s84))
 ```autohotkey
-if (car="old")
+if (car == "old")
 {
    msgbox, the car is really old
-   if (wheels="flat")
+   if (wheels == "flat")
    {
       msgbox, this car is not safe to drive.
       Return
@@ -157,14 +157,14 @@ WinClose Notepad
 
 ### Naming Convention
 
-* Variable names should use camelCase. (first word - lower, second word - upper, third word - upper, and so on)
+* Variable names should consisting of many words should use camelCase or underscores for distinction. 
 ```autohotkey
 farthestplanet := "Pluto" ; bad
-farthest_planet := "Pluto" ; ok
+farthest_planet := "Pluto" ; good
 farthestPlanet := "Pluto" ; good
 ```
 
-* Class names should use PascalCase.
+* Class names should use PascalCase. This is consistent with many programming languages like C++, Python and Java.
 ```autohotkey
 ; bad
 class myclass {
